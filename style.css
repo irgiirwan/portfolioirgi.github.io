@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f7fb;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 20px 0;
+    background: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* Menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #6c63ff; /* warna ungu aksen */
+}
+
+/* Social Icons */
+.social-icons a {
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+
+
+
+/* Hero Section */
+.hero {
+    padding: 80px 0;
+    background: #f7f7fb;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Text */
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #222;
+    line-height: 1.3;
+}
+
+.hero-text h1 span {
+    color: #6c63ff;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Form */
+.hero-form {
+    display: flex;
+    gap: 10px;
+}
+
+.hero-form input {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+.hero-form button {
+    padding: 12px 20px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Image */
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* Stats Section */
+.stats {
+    background: #ffffff;
+    padding: 50px 0;
+    border-top: 1px solid #eee;
+}
+
+.stats-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Box */
+.stat-box h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    color: #888;
+    font-size: 14px;
+}
+
+
+
+
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    background: #f7f7fb;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Text */
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.about-text p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Button */
+.btn-cv {
+    padding: 12px 20px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Image */
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* Services Section */
+.services {
+    padding: 80px 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+/* Title */
+.section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* Cards */
+.services-content {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.service-card {
+    background: #f7f7fb;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Hover effect */
+.service-card:hover {
+    transform: translateY(-5px);
+    background: #6c63ff;
+    color: white;
+}
+
+.service-card:hover p {
+    color: #eee;
+}
+
+
+
+
+
+/* Projects Section */
+.projects {
+    padding: 80px 0;
+    background: #f7f7fb;
+    text-align: center;
+}
+
+.projects-content {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.project-card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+}
+
+.project-card h3 {
+    margin: 15px 0 5px;
+    color: #222;
+}
+
+.project-card p {
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* Hover */
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Text */
+.contact-text {
+    flex: 1;
+}
+
+.contact-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-text p {
+    color: #666;
+}
+
+/* Form */
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background: #111;
+    color: #ccc;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ccc;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .nav-links {
+        display: none; /* sementara disembunyikan */
+    }
+
+    /* Hero */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    .hero-form {
+        flex-direction: column;
+    }
+
+    /* Stats */
+    .stats-content {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .stat-box {
+        width: 45%;
+    }
+
+    /* About */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 250px;
+    }
+
+    /* Services */
+    .services-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Projects */
+    .projects-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Contact */
+    .contact-content {
+        flex-direction: column;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
